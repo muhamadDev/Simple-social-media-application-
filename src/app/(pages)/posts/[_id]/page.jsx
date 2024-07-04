@@ -56,13 +56,13 @@ export default async function PostPage({params}) {
         }
         
         return (
-            <div  className="w-full h-[100vh] px-10 flex justify-between 
+            <div  className="w-full h-[100vh] px-10 pt-10 flex justify-between 
             flex-col md:flex-row"
             >
-                <div className="flex-1">
+                <div className="md:w-[50%] w-[100%] h-[85%] mb-5 md:h-[100%]">
                     
                     <Image 
-                        className="w-full h-[80%] object-cover rounded-2xl"
+                        className="w-full h-full object-cover rounded-2xl"
                         src={post.imageUrl}
                         width={500}
                         height={700}
@@ -71,7 +71,9 @@ export default async function PostPage({params}) {
                     
                 </div>
                 
-                <div className="flex-1 flex flex-col justify-start pt-10 px-5 gap-y-5">
+                <div className="flex-1 flex flex-col justify-start pt-1 lg:pt-10 
+                    px-5 gap-y-5"
+                >
                     
                     <div className="w-full text-center text-3xl font-black">
                         {post.title}

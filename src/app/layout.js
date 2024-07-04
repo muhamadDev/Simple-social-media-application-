@@ -3,7 +3,8 @@ import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
 import ThemeProvider from "@/components/ThemProvider";
 import Navbar from "@/components/Navbar";
-
+import MobileNavbar from "@/components/MobileNavbar";
+import LogOutBtn from "@/components/LogOutBtn";
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -44,6 +45,11 @@ export default function RootLayout({ children }) {
                     enableSystem
                 >
                     <Navbar />
+                    
+                    <MobileNavbar>
+                        <LogOutBtn /> 
+                    </MobileNavbar>
+                    
                     {children}
                 </ThemeProvider>
             </body>

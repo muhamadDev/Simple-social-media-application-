@@ -5,6 +5,7 @@ import LoginBtn from "@/components/LoginBtn";
 import { auth } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 
+
 export default async function Navbar() {
     
     const sesstion = await auth();
@@ -13,24 +14,24 @@ export default async function Navbar() {
     
     return (
         <div className="w-full h-[65px] bg-background px-5
-            flex justify-between items-center"
+            hidden md:flex justify-between items-center"
         >
-            <div className="w-[180px] flex justify-start items-center gap-x-1">
+            <div className="w-[180px] h-[100%] flex justify-start items-center gap-x-1">
                 <Image 
-                    className="dark:hidden w-[35px] h-auto"
+                    className="dark:hidden w-[35px] h-[100%]"
                     src="/logo.svg"
                     alt="logo"
                     width={40}
                     height={40}
                 />
                 <Image 
-                    className="hidden dark:block w-[35px] h-auto"
+                    className="hidden dark:block w-[35px] h-[100%]"
                     src="/logo-dark.svg"
                     alt="logo"
                     width={40}
                     height={40}
                 />
-                <p className="font-bold">Dark</p>
+                <p className="font-bold text-2xl">Dark</p>
             </div>
 
             <div className="flex justify-center items-center gap-x-5 flex-1 font-bold">

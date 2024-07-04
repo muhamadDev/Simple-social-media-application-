@@ -14,11 +14,11 @@ export default function Post({ data, children }) {
     
     return (
             <div 
-                className="w-full aspect-[3/4] flex justify-start items-center gap-y-10
+                className="w-full aspect-[3/4] flex justify-start items-center gap-y-5
                 flex-col px-2 bg-card rounded-lg border text-card-foreground 
                 shadow-sm relative"
             >
-                <div className="w-full h-[60%] p-2" onClick={handleClick}>
+                <div className="w-full h-[70%] py-2" onClick={handleClick}>
                     <Image 
                         className="rounded-3xl w-full h-full object-cover px-2 py-2"
                         src={data.imageUrl}
@@ -29,7 +29,7 @@ export default function Post({ data, children }) {
                     />
                 </div>
 
-                <div className="w-full h-[40%] flex pt-4 items-center flex-col" 
+                <div className="w-full h-[30%] flex  items-center flex-col" 
                     onClick={handleClick}
                 >
                     

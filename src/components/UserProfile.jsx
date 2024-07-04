@@ -10,7 +10,7 @@ export default function UserProfile( {user} ) {
     }
     
     return (
-        <div className="flex justify-center gap-x-3 w-full pt-10" 
+        <div className="flex justify-center gap-x-3 w-full pt-10 pb-5" 
             onClick={GoToProfile}
         >
             

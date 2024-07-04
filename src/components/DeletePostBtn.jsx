@@ -35,7 +35,7 @@ export default async function DeletePostBtn({ postId }) {
     return (
         <div>
             <form action={deletePost}>
-                <Button>delete</Button>
+                <Button variant="destructive">delete</Button>
             </form>
         </div>
     )
