@@ -1,5 +1,6 @@
 "use client"
-// loop throw an artay and return this component
+// TODO: THIS COMPONENT NEVER REANDER IT'S JUST A SMAPLE OF HOW TO USE "react-intersection-observer" TO MAKE A LAZY LOADING COMPONENT
+// loop throw an array and return this component
 // and dont forget to replace loading... to a skeleton component
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from 'react';
